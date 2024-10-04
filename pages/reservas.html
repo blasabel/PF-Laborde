@@ -20,11 +20,47 @@
                 <li><a href="./destinos.html">DESTINOS</a></li>
                 <li><a href="#">RESERVAS</a></li>
                 <li><img src="../assets/img/download.ico" alt=""></li>
+                <li><a href="./registrarse.html">REGISTRARSE</a></li>
+                <li><a href="./iniciarsesion.html">INICIAR SESION</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-
+    <main class="fondoFormularios">
+        <div>
+            <h2>~RESERVAS~</h2>
+        </div>
+        <section>
+            <div>
+                <form action="" method="post">
+                    <h3>Cant. de Personas:</h3>
+                    <select name="cantidad personas">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                    <h3>Fecha de inicio: <input type="text" name="fecha inicio"> </h3>
+                    <h3>Fecha de regreso: <input type="text" name="fecha regreso"></h3>
+                    <h3>Destino:</h3>
+                    <p>Pais: <input type="text" name="pais"></p>
+                    <p>Ciudad: <input type="text" name="ciudad"></p>
+                    <p>Hotel: <input type="text" name="hotel"></p>
+                    <p>Aerolinea: <input type="text" name="aerolinea"></p>
+                    <h3>Datos de los integrantes:</h3>
+                    <p>Nombre de cada integrante: <input type="text" name="nombre"></p>
+                    <p>Apellido de cada integrante: <input type="text" name="apellido"></p>
+                    <p>Edad de cada integrante: <input type="text" name="edad"></p>
+                    <p>Documento de identidad (DNI) de cada integrante: <input type="text" name="DNI"></p>
+                    <p>Numero de telefono de cada integrante: <input type="text" name="telefono"></p>
+                    <input type="submit" value="Reservar">
+                </form>
+            </div> 
+        </section>
     </main>
     <footer>
         <img src="../assets/img/copyright.ico" alt="">

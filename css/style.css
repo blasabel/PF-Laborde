@@ -112,3 +112,8 @@ footer img {
     color: black;
     font-family: "Kaisei HarunoUmi", serif;
 }
+
+.fondoFormularios {
+    background-image: url(../assets/img/fondo\ formularios.jpg);
+    font-family: "Kaisei HarunoUmi", serif;
+}
