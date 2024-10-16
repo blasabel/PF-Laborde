@@ -13,6 +13,9 @@ font-family: "Julius Sans One", system-ui; */
 .headerInicio div {
     background-color: rgb(185,181,181);
     font-family: "Kaisei HarunoUmi", serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 .headerInicio div img {
@@ -22,18 +25,35 @@ font-family: "Julius Sans One", system-ui; */
 footer {
     background-color: rgb(185,181,181);
     font-family: "Julius Sans One", system-ui;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+}
+footer p{
+    padding: 20px;
+}
+footer img {
+    width: 60px;
 }
 
-footer img {
-    width: 20 px;
-}
 .navFondo {
     background-image: url(../assets/img/marbel\ nav.avif);
-    font-family: "Julius Sans One", system-ui;   
+    font-family: "Julius Sans One", system-ui;
+    margin: auto;
+}
+
+.navBarra{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: space-around;
+    list-style: none;
+    padding: 20px;
 }
 
 .navFondo img {
-    width: 40px;
+    width: 30px;
 }
 
 .logoPrincipio{
