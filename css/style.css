@@ -23,7 +23,7 @@ font-family: "Julius Sans One", system-ui; */
 }
 
 footer {
-    background-color: rgb(185,181,181);
+    background-color:rgb(185,181,181);
     font-family: "Julius Sans One", system-ui;
     display: flex;
     flex-direction: row;
@@ -51,7 +51,10 @@ footer img {
     list-style: none;
     padding: 20px;
 }
-
+.navBarra li a{
+    text-decoration: none;
+    color: black;
+}
 .navFondo img {
     width: 30px;
 }
@@ -59,14 +62,46 @@ footer img {
 .logoPrincipio{
     background-image: url(../assets/img/foto\ fondo\ inicio.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
+    background-size: contain;
+    height: 59.375rem;
+    width: auto;
     font-family: "Kaisei HarunoUmi", serif;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: transparent;
+}
+
+.logoPrincipio div h2 {
+    border: solid 2px black;
+    border-radius: 0rem 3.125rem 3.125rem 0rem;
+    background-color: rgb(185,181,181);
+    width: 400px;
+    font-size: 40px;
+    padding-left: 20px;
+    margin-bottom: 1.25rem;
+}
+
+.logoPrincipio div h3{
+    border: solid 2px black;
+    border-radius: 0rem 3.125rem 3.125rem 0rem;
+    background-color: rgb(185,181,181);
+    width: 300px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.logoPrincipio div img {
+    width: auto;
+    height: 2.5rem;
+    margin-top:.625rem;
 }
 
 .fondoFrase {
     background-image: url(../assets/img/marbel\ nav.avif);
     font-family: "Kaisei HarunoUmi", serif;
+    height: 400px;
+    width: auto;
 }
 
 .fondoPilares {
