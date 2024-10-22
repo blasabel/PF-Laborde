@@ -215,7 +215,7 @@ footer img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1.25rem;
+    padding: 3.125rem;
     gap: 4.375rem;
 }
 
@@ -233,6 +233,7 @@ footer img {
 
 .fundacionEmpresa div p{
     width: 25rem;
+    text-align: center;
 }
 
 .fundacionEmpresa img{
@@ -241,32 +242,323 @@ footer img {
     border-radius: .9375rem;
     border: solid 1px black;
 }
-.comentarios {
-    font-family: "Kaisei HarunoUmi", serif;
-    background-image: url(../assets/img/marbel\ inicio\ fondo.avif)
+
+.recorridosRealizados {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    gap: 4.375rem;
 }
 
-.comentarios div img {
-    width: 500px;
+.recorridosRealizados div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
 }
+
+.recorridosRealizados div h3{
+    border-bottom: solid .125rem black;
+    font-size: 1.75rem;
+}
+
+.recorridosRealizados div p{
+    width: 25rem;
+    text-align: center;
+}
+
+.recorridosRealizados img{
+    width: 34.1875rem;
+    height: 19.375rem;
+    border-radius: .9375rem;
+    border: solid .0625rem black;
+}
+
+.motivacionesPlanes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    gap: 4.375rem;
+}
+
+.motivacionesPlanes div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.motivacionesPlanes div h3{
+    border-bottom: solid .125rem black;
+    font-size: 1.75rem;
+}
+
+.motivacionesPlanes div p {
+    width: 25rem;
+    text-align: center;
+}
+
+.motivacionesPlanes img{
+    width: 34.1875rem;
+    height: 19.375rem;
+    border-radius: .9375rem;
+    border: solid .0625rem black;
+}
+
+.comentarios {
+    font-family: "Kaisei HarunoUmi", serif;
+    background-image: url(../assets/img/marbel\ inicio\ fondo.avif);
+    height: 37.5rem;
+}
+
+.comentarios h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(185,181,181);
+    height: 5.625rem;
+}
+
+.imagenComentarios {
+    width: 17.625rem;
+    height: 24.25rem;
+    border: solid .125rem black;
+    border-radius: .9375rem;
+    grid-area: imagenComentarios;
+}
+
+.gridComentarios {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "comentario1 comentario2 imagenComentarios"
+    "comentario3 comentario4 imagenComentarios"
+    "comentario5 comentario6 imagenComentarios" 
+    "comentarioFinal comentarioFinal imagenComentarios";
+    column-gap: 6.25rem;
+    row-gap: 1.25rem;
+    padding: 3.5rem;
+    justify-items: center;
+}
+
+.comentario1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .625rem;
+    grid-area: comentario1;
+}
+
+.comentario2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .625rem;
+    grid-area: comentario2;
+}
+
+.comentario3 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .625rem;
+    grid-area: comentario3;
+}
+
+.comentario4 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .625rem;
+    grid-area: comentario4;
+}
+
+.comentario5 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .625rem;
+    grid-area: comentario5;
+}
+
+.comentario6{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .625rem;
+    grid-area: comentario6;
+}
+
+.comentario1 img{
+    width: 2.375rem;
+    border-radius: 100%;
+    background-color: rgb(185,181,181);
+    padding: .625rem;
+}
+
+.comentario2 img{
+    width: 2.375rem;
+    border-radius: 100%;
+    background-color: rgb(185,181,181);
+    padding: .625rem;
+}
+
+.comentario3 img {
+    width: 2.375rem;
+    border-radius: 100%;
+    background-color: rgb(185,181,181);
+    padding: .625rem;
+}
+
+.comentario4 img{
+    width: 2.375rem;
+    border-radius: 100%;
+    background-color: rgb(185,181,181);
+    padding: .625rem;
+}
+
+.comentario5 img{
+    width: 2.375rem;
+    border-radius: 100%;
+    background-color: rgb(185,181,181);
+    padding: .625rem;
+}
+
+.comentario6 img{
+    width: 2.375rem;
+    border-radius: 100%;
+    background-color: rgb(185,181,181);
+    padding: .625rem;
+}
+
+.comentario1 p{
+    border-radius: 1.875rem;
+    background-color: rgb(204, 211, 238);
+    padding: .9375rem;
+    font-size: 1rem;
+    width: 31.25rem;
+}
+
+.comentario2 p{
+    border-radius: 1.875rem;
+    background-color: rgb(204, 211, 238);
+    padding: .9375rem;
+    font-size: 1rem;
+    width: 31.25rem;
+}
+
+.comentario3 p{
+    border-radius: 1.875rem;
+    background-color: rgb(204, 211, 238);
+    padding: .9375rem;
+    font-size: 1rem;
+    width: 31.25rem;
+}
+
+.comentario4 p{
+    border-radius: 1.875rem;
+    background-color: rgb(204, 211, 238);
+    padding: .9375rem;
+    font-size: 1rem;
+    width: 31.25rem;
+}
+
+.comentario5 p{
+    border-radius: 1.875rem;
+    background-color: rgb(204, 211, 238);
+    padding: .9375rem;
+    font-size: 1rem;
+    width: 31.25rem;
+}
+
+.comentario6 p{
+    border-radius: 1.875rem;
+    background-color: rgb(204, 211, 238);
+    padding: .9375rem;
+    font-size: 1rem;
+    width: 31.25rem;
+}
+
+.comentarioFinal{
+    grid-area: comentarioFinal;
+    width: 62.5rem;
+    text-align: center;
+    border-radius: 1.875rem;
+    background-color: rgb(204, 211, 238);
+    font-size: 1rem;
+    padding: .9375rem;
+}
+
+
 
 .destinosInicio {
     background-image: url(../assets/img/fondo\ destinos.jpg);
     font-family: "Kaisei HarunoUmi", serif;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18.75rem;
+    padding: 2.5rem;
+}
+
+.destinosInicio h2{
+    color: white;
+    font-size: 8rem;
+}
+
+.destinosInicio img{
+    width: 15rem;
+    position: absolute;
+    top: 23rem;
+    right: 25.900rem;
+    transform: translate(-50%, -50%);
 }
 
 .fondoDestinos {
     font-family: "Kaisei HarunoUmi", serif;
     background-image: url(../assets/img/fondo\ destinos\ marbel.jpg);
     color: white;
+    background-size: cover;
+    padding: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 4.375rem;
+}
+
+.fondoDestinos h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.25rem;
+    background-image: url(../assets/img/marbel-destinos.jpg);
+    background-size: cover;
+    border-radius: 1.5625rem;
+    width: 22.875rem;
+    height: 4.8125rem;
+}
+
+.cardConteiner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 37.5rem;
+    gap: 9.375rem
 }
 
 .card {
     width: 200px;
     height: 300px;
     background-color: rgb(185,181,181);
-    
+    border-radius: 1.5625rem;
+    padding: 1.875rem;
+    ;
 }
 
 .cardImagen {
@@ -277,12 +569,16 @@ footer img {
 .cardImagen img {
     width: 100%;
     height: 100%;
+    border-radius: .9375rem;
 }
 
 .cardNombre {
     text-align: center;
     color: black;
     font-family: "Kaisei HarunoUmi", serif;
+    padding-top: 3.125rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
 }
 
 .fondoFormularios {
