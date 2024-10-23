@@ -492,8 +492,6 @@ footer img {
     padding: .9375rem;
 }
 
-
-
 .destinosInicio {
     background-image: url(../assets/img/fondo\ destinos.jpg);
     font-family: "Kaisei HarunoUmi", serif;
@@ -581,12 +579,89 @@ footer img {
     padding-right: 3.125rem;
 }
 
+
+
 .fondoFormularios {
     background-image: url(../assets/img/fondo\ formularios.jpg);
     font-family: "Kaisei HarunoUmi", serif;
+    height:  56.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7.5rem;
+    padding: 9.375rem;
+}
+
+.tituloRegistrarse{
+    font-size: 2rem;
+}
+
+.formularioRegistrarse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5625rem;
+    background-color: rgb(185,181,181);
+    width: 31.25rem;
+    height: 18.75rem;
+    text-align: center;
+}
+
+.fondoFormularioIniciar{
+    background-image: url(../assets/img/fondo\ formularios.jpg);
+    font-family: "Kaisei HarunoUmi", serif;
+    height:  56.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7.5rem;
+    padding: 9.375rem;
+}
+
+.tituloIniciarSesion{
+    font-size: 2rem;
+}
+
+.formularioIniciarSesion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5625rem;
+    background-color: rgb(185,181,181);
+    width: 31.25rem;
+    height: 18.75rem;
+    text-align: center;
+}
+
+.formularioIniciarSesion div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.formularioIniciarSesion div form input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5625rem;
+    background-color:rgb(217 217 217) ;
+    border: none;
+    padding: .625rem;
+}
+
+.formularioIniciarSesion div form input:hover {
+    font-weight: bold;
 }
 
 .fondoReservas {
     background-image: url(../assets/img/fondo\ marbel\ rservas.jpg);
     font-family: "Kaisei HarunoUmi", serif;
 }
+
+a:hover {
+    font-weight: bold;
+    color: rgba(185, 181, 181, 0.822);
+}
+
