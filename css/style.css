@@ -12,7 +12,7 @@ font-family: "Julius Sans One", system-ui; */
 
 /* ########### CSS DEL HEADER ########### */
 
-.headerInicio div {
+.headerInicio div  {
     background-color: rgb(185,181,181);
     font-family: "Kaisei HarunoUmi", serif;
     display: flex;
@@ -27,6 +27,12 @@ font-family: "Julius Sans One", system-ui; */
     border-radius: 100px;
     margin: 5px;
 }
+
+.headerInicio div a{
+    color: rgb(72, 69, 69);
+    text-decoration: none;
+}
+
 
 /* ########### CSS DEL NAV ########### */
 
@@ -617,12 +623,11 @@ footer img {
     display: grid;
     grid-template-areas: 
     "gridReservas-1 gridReservas-1 gridReservas-1"
-    "gridReservas-2 gridReservas-3 gridReservas-3"
+    "gridReservas-2 none gridReservas-3"
     ;
-}
-
-.reservas{
-    grid-area: reservas;
+    column-gap: 3.75rem;
+    row-gap: .625rem;
+    padding-bottom: 1.25rem;
 }
 
 .gridReservas-1{
@@ -635,6 +640,29 @@ footer img {
     column-gap: .9375rem;
     padding: .625rem;
     grid-area: gridReservas-1;
+    gap: .3125rem;
+}
+
+.reservasForm input:hover {
+    font-weight: bold;
+} 
+
+.reservasForm select:hover{
+    font-weight: bold;
+}
+
+.gridReservas-1 input{
+    border-radius: 1.5625rem;
+    background-color:rgb(217 217 217) ;
+    border: none;
+    padding: .3125rem;
+}
+
+.gridReservas-1 select{
+    border-radius: 1.5625rem;
+    background-color:rgb(217 217 217) ;
+    border: none;
+    padding: .3125rem;
 }
 
 .cantPersonas{
@@ -675,8 +703,17 @@ footer img {
     "hotel"
     "hotelInput"
     "aerolinea"
-    "aerolineaInput";
+    "aerolineaInput"
+    "reservasInput";
     grid-area: gridReservas-2;
+    padding: .625rem;
+    row-gap: .625rem;
+}
+
+.gridReservas-2 input{
+    border-radius: 1.5625rem;
+    background-color:rgb(217 217 217) ;
+    border: none;
     padding: .625rem;
 }
 
@@ -720,6 +757,12 @@ footer img {
     width: 15.625rem;
 }
 
+.reservasInput{
+    grid-area: reservasInput;
+    width: 6.25rem;
+    text-align: center;
+}
+
 .gridReservas-3{
     display: grid;
     grid-template-areas: 
@@ -735,6 +778,16 @@ footer img {
     "numeroTelefono"
     "numeroTelefonoInput";
     grid-area: gridReservas-3;
+    border-left: solid black 2px;
+    padding-left: 1.25rem;
+    row-gap: .625rem;
+}
+
+.gridReservas-3 input{
+    border-radius: 1.5625rem;
+    background-color:rgb(217 217 217) ;
+    border: none;
+    padding: .625rem;
 }
 
 .datos{
