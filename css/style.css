@@ -33,6 +33,42 @@ font-family: "Julius Sans One", system-ui; */
     text-decoration: none;
 }
 
+@media (min-width: 768px) {
+    .headerInicio div  {
+        background-color: rgb(185,181,181);
+        font-family: "Kaisei HarunoUmi", serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        color: rgb(72, 69, 69);
+    }
+    
+    .headerInicio div img {
+        width: 50px;
+        border-radius: 100px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .headerInicio div  {
+        background-color: rgb(185,181,181);
+        font-family: "Kaisei HarunoUmi", serif;
+        font-size: .75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: rgb(72, 69, 69);
+    }
+    
+    .headerInicio div img {
+        width: 30px;
+        border-radius: 100px;
+        margin: 5px;
+    }
+}
 
 /* ########### CSS DEL NAV ########### */
 
@@ -44,17 +80,154 @@ font-family: "Julius Sans One", system-ui; */
 
 .navBarra{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
     padding: 20px;
+    position: relative;
 }
+
+.navBarra li{
+    position: relative;
+}
+
 .navBarra li a{
     text-decoration: none;
     color: black;
 }
+
+.navBarra li ul{
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    list-style: none;
+    background-image: url(../assets/img/marbel\ nav.avif); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: max-height 0.3s ease;
+    z-index: 1;
+    gap: .625rem;
+}
+
+.navBarra li:hover ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    padding: 10px 0;
+    height: auto;
+    
+    
+}
+
+.navBarra li ul li {
+    padding: 5px 10px;
+}
+
 .navFondo img {
     width: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .navBarra{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        padding: 20px;
+        position: relative;
+}
+    .navBarra li{
+        position: relative;
+    }
+
+    .navBarra li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .navBarra li ul{
+        position: absolute; 
+        top: 100%; 
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        list-style: none;
+        background-image: url(../assets/img/marbel\ nav.avif); 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+        z-index: 1;
+        gap: .625rem;
+    }
+
+    .navBarra li:hover ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        padding: 10px 0;
+        height: auto;
+    }
+
+    .navBarra li ul li {
+        padding: 5px 10px;
+    }
+
+    .navFondo img {
+        width: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .navBarra{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        padding: 20px;
+        position: relative;
+        font-size: .625rem;
+        gap: .3125rem;
+    }
+    
+    .navBarra li{
+        position: relative;
+    }
+    
+    .navBarra li a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .navBarra li ul{
+        position: absolute; 
+        top: 100%; 
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        list-style: none;
+        background-image: url(../assets/img/marbel\ nav.avif); 
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+        transition: max-height 0.3s ease;
+        z-index: 1;
+        gap: .625rem;
+    }
+    
+    .navBarra li:hover ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        padding: 10px 0;
+        height: auto;
+    }
+    
+    .navBarra li ul li {
+        padding: 5px 10px;
+    }
+    
+    .navFondo img {
+        width: 10px;
+    }
+    
 }
 
 /* ########### CSS DEL FOOTER ########### */
@@ -70,6 +243,22 @@ footer {
 
 footer img {
     width: 60px;
+}
+
+@media (max-width: 425px) {
+    footer {
+        background-color:rgb(185,181,181);
+        font-family: "Julius Sans One", system-ui;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        font-size: .75rem;
+    }
+    
+    footer img {
+        width: 40px;
+    }
 }
 
 /* ########### CSS DEL INICIO (INDEX) ########### */
@@ -925,6 +1114,126 @@ footer img {
     grid-area: registrarse;
 }
 
+@media (max-width: 768px) {
+    .tituloRegistrarse{
+        font-size: 1.5rem;
+    }
+    
+    .formularioRegistrarse{
+        border-radius: 1.5625rem;
+        background-color:rgb(203, 196, 196);
+        width: 28.125rem;
+        height: 22.4375rem;
+        padding: 40px;
+    }
+
+    .gridsForm{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+        "usuario perfil"
+        "mail ingresePerfil"
+        "contraseña fotoPerfil"
+        "repiteContraseña none"
+        "registrarse none"
+        ;
+        row-gap: .9375rem;
+        column-gap: 2.5rem;
+    }
+
+    .gridsForm input{
+        border-radius: 1.5625rem;
+        background-color:rgb(217 217 217) ;
+        border: none;
+        padding: .625rem;
+        width: 12.5rem;
+    }
+}
+
+@media (max-width: 577px) {
+    .tituloRegistrarse{
+        font-size: 1rem;
+    }
+    
+    .formularioRegistrarse{
+        border-radius: 1.5625rem;
+        background-color:rgb(203, 196, 196);
+        width: 18.75rem;
+        height: 18.75rem ;
+        padding: 1.25rem;
+    }
+
+    .gridsForm{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+        "usuario perfil"
+        "mail ingresePerfil"
+        "contraseña fotoPerfil"
+        "repiteContraseña none"
+        "registrarse none"
+        ;
+        row-gap: .9375rem;
+        column-gap: 2.5rem;
+    }
+
+    .gridsForm p{
+        font-size: .75rem;
+    }
+
+    .gridsForm input{
+        border-radius: 1.5625rem;
+        background-color:rgb(217 217 217) ;
+        border: none;
+        padding: .3125rem;
+        width: 6.875rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .tituloRegistrarse{
+        font-size: 1rem;
+    }
+    
+    .formularioRegistrarse{
+        border-radius: 1.5625rem;
+        background-color:rgb(203, 196, 196);
+        width: 15.625rem;
+        height: 18.75rem ;
+        padding: 1.25rem;
+    }
+
+    .gridsForm{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+        "usuario perfil"
+        "mail ingresePerfil"
+        "contraseña fotoPerfil"
+        "repiteContraseña none"
+        "registrarse none"
+        ;
+        row-gap: .9375rem;
+        column-gap: 2.5rem;
+    }
+
+    .gridsForm p{
+        font-size: .625rem;
+    }
+
+    .gridsForm input{
+        border-radius: 1.5625rem;
+        background-color:rgb(217 217 217) ;
+        border: none;
+        padding: .3125rem;
+        width: 6.25rem;
+    }
+
+}
+
 /* ########### CSS DE INICIAR SESION ###########*/
 
 .fondoFormularioIniciar{
@@ -973,6 +1282,125 @@ footer img {
 
 .formularioIniciarSesion div form input:hover {
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .fondoFormularioIniciar{
+        background-image: url(../assets/img/fondo\ formularios.jpg);
+        font-family: "Kaisei HarunoUmi", serif;
+        height:  56.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7.5rem;
+        padding: 9.375rem;
+    }
+    
+    .tituloIniciarSesion{
+        font-size: 1.5rem;
+    }
+    
+    .formularioIniciarSesion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.5625rem;
+        background-color: rgb(203, 196, 196);
+        width: 28.125rem;
+        height: 18.75rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 500px) {
+    .fondoFormularioIniciar{
+        background-image: url(../assets/img/fondo\ formularios.jpg);
+        font-family: "Kaisei HarunoUmi", serif;
+        height:  56.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7.5rem;
+        padding: 9.375rem;
+    }
+    
+    .tituloIniciarSesion{
+        font-size: 1rem;
+    }
+    
+    .formularioIniciarSesion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.5625rem;
+        background-color: rgb(203, 196, 196);
+        width: 21.875rem;
+        height: 18.75rem;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .fondoFormularioIniciar{
+        background-image: url(../assets/img/fondo\ formularios.jpg);
+        font-family: "Kaisei HarunoUmi", serif;
+        height:  56.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7.5rem;
+        padding: 9.375rem;
+    }
+    
+    .tituloIniciarSesion{
+        font-size: 1rem;
+        text-align: center;
+
+    }
+    
+    .formularioIniciarSesion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.5625rem;
+        background-color: rgb(203, 196, 196);
+        width: 21.875rem;
+        height: 18.75rem;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .fondoFormularioIniciar{
+        background-image: url(../assets/img/fondo\ formularios.jpg);
+        font-family: "Kaisei HarunoUmi", serif;
+        height:  56.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7.5rem;
+        padding: 9.375rem;
+    }
+    
+    .tituloIniciarSesion{
+        font-size: 1rem;
+        text-align: center;
+
+    }
+    
+    .formularioIniciarSesion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1.5625rem;
+        background-color: rgb(203, 196, 196);
+        width: 15.625rem;
+        height: 18.75rem;
+        text-align: center;
+    }
+
 }
 
 /* ########### PSEUDOCLASES QUE PERTENECEN AL NAV ########### */
