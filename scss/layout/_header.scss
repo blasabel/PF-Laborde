@@ -1,0 +1,21 @@
+.headerInicio {
+    div{
+        background-color: rgb(185,181,181);
+        font-family: "Kaisei HarunoUmi", serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        color: rgb(72, 69, 69);
+        img {
+            width: 50px;
+            border-radius: 100px;
+            margin: 5px;
+        }
+        a{
+            color: rgb(72, 69, 69);
+            text-decoration: none;
+        }
+    }
+  
+}

@@ -1,0 +1,30 @@
+.tarjetasPilares {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3.75rem;
+        gap: 1.875rem;
+        img{
+            height: 10.3125rem;
+            width: 10.25rem;
+            border: solid .125rem black;
+            border-radius: 1.5625rem;
+        }
+        h4{
+            padding: .625rem;
+            border-top: solid .0625rem black;
+            border-bottom: solid .0625rem black;
+            font-size: 1.625rem;
+        }
+        p{
+            width: 28rem;
+            font-family: "Kaisei HarunoUmi", serif;
+            text-align: center;
+        }
+    }
+}

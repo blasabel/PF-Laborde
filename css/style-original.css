@@ -123,6 +123,27 @@ font-family: "Julius Sans One", system-ui; */
     padding: 5px 10px;
 }
 
+.formBuscar {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    background-color: rgb(217 217 217);
+    padding: .625rem;
+    gap: .9375rem;
+    width: 18.75rem;
+}
+
+.formBuscar input{
+    background-color: rgb(217 217 217);
+    border: none;
+}
+
+.formBuscar input:hover {
+    border: none rgb(217 217 217) solid;
+    font-weight: bold;
+    color: rgba(185, 181, 181, 0.822);
+    
+}
 .navFondo img {
     width: 30px;
 }
