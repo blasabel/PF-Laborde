@@ -1,0 +1,18 @@
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin grid($col, $row, $areas){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    grid-template-areas: $areas ;
+}

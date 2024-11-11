@@ -2,9 +2,7 @@
     div{
         background-color: rgb(185,181,181);
         font-family: "Kaisei HarunoUmi", serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenter;
         padding: 20px;
         color: rgb(72, 69, 69);
         img {

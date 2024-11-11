@@ -1,0 +1,218 @@
+.fondoReservas {
+    background-image: url(../assets/img/fondo\ marbel\ rservas.jpg);
+    font-family: "Kaisei HarunoUmi", serif;
+    height:  56.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7.5rem;
+    padding: 9.375rem;
+}
+
+.tituloReservas {
+    font-size: 2.5rem;
+}
+
+.reservasFormEstilos{
+    background-color: rgb(203, 196, 196);
+    border-radius: 1.5625rem;
+    padding: 1.875rem;
+}
+
+.reservasForm{
+    @include grid(none,none,"gridReservas-1 gridReservas-1 gridReservas-1""gridReservas-2 none gridReservas-3");
+    column-gap: 3.75rem;
+    row-gap: .625rem;
+    padding-bottom: 1.25rem;
+}
+
+.reservasForm input:hover {
+    font-weight: bold;
+} 
+
+.reservasForm select:hover{
+    font-weight: bold;
+}
+
+.gridReservas-1{
+    @include grid(2fr 1fr 1fr, repeat(2,auto), "cantPersonas fechaInicio fechaRegreso""selector fechaInicioInput fechaRegresoInput");
+    column-gap: .9375rem;
+    padding: .625rem;
+    grid-area: gridReservas-1;
+    gap: .3125rem;
+}
+
+.gridReservas-1 input{
+    border-radius: 1.5625rem;
+    background-color:rgb(217 217 217) ;
+    border: none;
+    padding: .3125rem;
+}
+
+.gridReservas-1 select{
+    border-radius: 1.5625rem;
+    background-color:rgb(217 217 217) ;
+    border: none;
+    padding: .3125rem;
+}
+
+.cantPersonas{
+    grid-area: cantPersonas;
+}
+
+.selector{
+    grid-area: selector;
+    width: 6.25rem;
+}
+
+.fechaInicio{
+    grid-area: fechaInicio;
+    text-align: center;
+}
+
+.fechaInicioInput{
+    grid-area: fechaInicioInput;
+}
+
+.fechaRegreso{
+    grid-area: fechaRegreso;
+    text-align: center;
+}
+
+.fechaRegresoInput{
+    grid-area: fechaRegresoInput;
+}
+
+.gridReservas-2{
+    @include grid(none,none,"destino""pais""paisInput""ciudad""ciudadInput""hotel""hotelInput""aerolinea""aerolineaInput""reservasInput");
+    grid-area: gridReservas-2;
+    padding: .625rem;
+    row-gap: .625rem;
+}
+
+.gridReservas-2 input{
+    border-radius: 1.5625rem;
+    background-color:rgb(217 217 217) ;
+    border: none;
+    padding: .625rem;
+}
+
+.destino{
+    grid-area: destino;
+}
+
+.pais{
+    grid-area: pais;
+}
+
+.paisInput{
+    grid-area: paisInput;
+    width: 15.625rem;
+}
+
+.ciudad{
+    grid-area: ciudad;
+}
+
+.ciudadInput{
+    grid-area: ciudadInput;
+    width: 15.625rem;
+}
+
+.hotel{
+    grid-area: hotel;
+}
+
+.hotelInput{
+    grid-area: hotelInput;
+    width: 15.625rem;
+}
+
+.aerolinea{
+    grid-area: aerolinea;
+}
+
+.aerolineaInput{
+    grid-area: aerolineaInput;
+    width: 15.625rem;
+}
+
+.reservasInput{
+    grid-area: reservasInput;
+    width: 6.25rem;
+    text-align: center;
+}
+
+.gridReservas-3{
+    @include grid(none,none,"datos"
+    "nombreIntegrante"
+    "nombreIntegranteInput"
+    "apellidoIntegrante"
+    "apellidoIntegranteInput"
+    "edadIntegrante"
+    "edadIntegranteInput"
+    "dni"
+    "dniInput"
+    "numeroTelefono"
+    "numeroTelefonoInput");
+    grid-area: gridReservas-3;
+    border-left: solid black 2px;
+    padding-left: 1.25rem;
+    row-gap: .625rem;
+}
+
+.gridReservas-3 input{
+    border-radius: 1.5625rem;
+    background-color:rgb(217 217 217) ;
+    border: none;
+    padding: .625rem;
+}
+
+.datos{
+    grid-area: datos;
+}
+
+.nombreIntegrante{
+    grid-area: nombreIntegrante;
+}
+
+.nombreIntegranteInput{
+    grid-area: nombreIntegranteInput;
+    width: 15.625rem;
+}
+
+.apellidoIntegrante{
+    grid-area: apellidoIntegrante;
+}
+
+.apellidoIntegranteInput{
+    grid-area: apellidoIntegranteInput;
+    width: 15.625rem;
+}
+
+.edadIntegrante{
+    grid-area: edadIntegrante;
+}
+
+.edadIntegranteInput{
+    grid-area: edadIntegranteInput;
+    width: 15.625rem;
+}
+
+.dni{
+    grid-area: dni;
+}
+
+.dniInput{
+    grid-area: dniInput;
+    width: 15.625rem;
+}
+
+.numeroTelefono{
+    grid-area: numeroTelefono;
+}
+
+.numeroTelefonoInput{
+    grid-area: numeroTelefonoInput;
+    width: 15.625rem;
+}

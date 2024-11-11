@@ -1,0 +1,143 @@
+.fondoAboutUs {
+    background-image: url(../assets/img/NYC\ foto.jpg);
+    font-family: "Kaisei HarunoUmi", serif;
+    width: auto;
+    height: 21.0625rem;
+    background-position: center;
+    @include flexCenter;
+    div {
+        h2{
+            border-radius: 3.125rem;
+            background-color: rgb(217, 217, 217, 0.5);
+            padding: 1.25rem;
+            width: 25rem;
+            text-align: center;
+        }
+    }
+}
+
+.textoSobreNosotros{
+    font-family: "Kaisei HarunoUmi", serif;
+    background-image: url(../assets/img/marbel\ inicio\ fondo.avif);
+    padding: 2.5rem;
+    img {
+        width: 500px;
+    }
+}
+
+.fundacionEmpresa {
+    @include flexAround;
+    padding: 3.125rem;
+    gap: 4.375rem;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.875rem;
+        h3{
+            border-bottom: solid .125rem black;
+            font-size: 1.75rem;
+        }
+        p{
+            width: 25rem;
+            text-align: center;
+        }
+    }
+    img{
+        width: 34.1875rem;
+        height: 19.375rem;
+        border-radius: .9375rem;
+        border: solid .0625rem black;
+    }
+}
+
+.recorridosRealizados {
+    @extend .fundacionEmpresa;
+}
+
+.motivacionesPlanes{
+    @extend .fundacionEmpresa;
+}
+
+.comentarios {
+    font-family: "Kaisei HarunoUmi", serif;
+    background-image: url(../assets/img/marbel\ inicio\ fondo.avif);
+    height: 37.5rem;
+    h2{
+        @include flexCenter;
+        background-color: rgb(185,181,181);
+        height: 5.625rem;
+    }
+}
+
+.imagenComentarios {
+    width: 17.625rem;
+    height: 24.25rem;
+    border: solid .125rem black;
+    border-radius: .9375rem;
+    grid-area: imagenComentarios;
+}
+
+.gridComentarios {
+    @include grid(repeat(4,2fr), repeat(4,auto), "comentario1 comentario2 imagenComentarios""comentario3 comentario4 imagenComentarios""comentario5 comentario6 imagenComentarios""comentarioFinal comentarioFinal imagenComentarios"  );
+    column-gap: 6.25rem;
+    row-gap: 1.25rem;
+    padding: 3.5rem;
+    justify-items: center;
+}
+
+.comentario1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: .625rem;
+    grid-area: comentario1;
+    img{
+        width: 2.375rem;
+        border-radius: 100%;
+        background-color: rgb(185,181,181);
+        padding: .625rem;
+    }
+    p{
+        border-radius: 1.875rem;
+        background-color: rgb(204, 211, 238);
+        padding: .9375rem;
+        font-size: 1rem;
+        width: 31.25rem;
+    }
+}
+
+.comentario2{
+    @extend .comentario1;
+    grid-area: comentario2;
+}
+
+.comentario3{
+    @extend .comentario1;
+    grid-area: comentario3;
+}
+
+.comentario4{
+    @extend .comentario1;
+    grid-area: comentario4;
+}
+
+.comentario5{
+    @extend .comentario1;
+    grid-area: comentario5;
+}
+
+.comentario6{
+    @extend .comentario1;
+    grid-area: comentario6;
+}
+
+.comentarioFinal{
+    grid-area: comentarioFinal;
+    width: 62.5rem;
+    text-align: center;
+    border-radius: 1.875rem;
+    background-color: rgb(204, 211, 238);
+    font-size: 1rem;
+    padding: .9375rem;
+}

@@ -1,0 +1,42 @@
+.destinosInicio {
+    background-image: url(../assets/img/fondo\ destinos.jpg);
+    font-family: "Kaisei HarunoUmi", serif;
+    background-size: cover;
+    @include flexCenter;
+    height: 18.75rem;
+    padding: 2.5rem;
+    h2{
+        color: white;
+        font-size: 8rem;
+    }
+    img{
+        width: 15rem;
+        position: absolute;
+        top: 23rem;
+        right: 25.900rem;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.fondoDestinos {
+    font-family: "Kaisei HarunoUmi", serif;
+    background-image: url(../assets/img/fondo\ destinos\ marbel.jpg);
+    color: white;
+    background-size: cover;
+    padding: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 4.375rem;
+    h3{
+        @include flexCenter;
+        font-size: 2.25rem;
+        background-image: url(../assets/img/marbel-destinos.jpg);
+        background-size: cover;
+        border-radius: 1.5625rem;
+        width: 22.875rem;
+        height: 4.8125rem;
+    }
+}
