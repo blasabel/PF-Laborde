@@ -44,14 +44,14 @@
 
 .gridReservas-1 input{
     border-radius: 1.5625rem;
-    background-color:rgb(217 217 217) ;
+    background-color: map-get($color, secundario) ;
     border: none;
     padding: .3125rem;
 }
 
 .gridReservas-1 select{
     border-radius: 1.5625rem;
-    background-color:rgb(217 217 217) ;
+    background-color:map-get($color, secundario) ;
     border: none;
     padding: .3125rem;
 }
@@ -92,7 +92,7 @@
 
 .gridReservas-2 input{
     border-radius: 1.5625rem;
-    background-color:rgb(217 217 217) ;
+    background-color:map-get($color, secundario) ;
     border: none;
     padding: .625rem;
 }
@@ -163,7 +163,7 @@
 
 .gridReservas-3 input{
     border-radius: 1.5625rem;
-    background-color:rgb(217 217 217) ;
+    background-color:map-get($color, secundario) ;
     border: none;
     padding: .625rem;
 }

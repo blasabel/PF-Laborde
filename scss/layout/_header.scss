@@ -1,17 +1,17 @@
 .headerInicio {
     div{
-        background-color: rgb(185,181,181);
+        background-color: map-get($color, primario );
         font-family: "Kaisei HarunoUmi", serif;
         @include flexCenter;
         padding: 20px;
-        color: rgb(72, 69, 69);
+        color: map-get($color ,terciario );
         img {
             width: 50px;
             border-radius: 100px;
             margin: 5px;
         }
         a{
-            color: rgb(72, 69, 69);
+            color: map-get($color, terciario );
             text-decoration: none;
         }
     }

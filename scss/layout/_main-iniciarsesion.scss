@@ -1,0 +1,39 @@
+.fondoFormularioIniciar{
+    background-image: url(../assets/img/fondo\ formularios.jpg);
+    font-family: "Kaisei HarunoUmi", serif;
+    height:  56.25rem;
+    @include flexColum
+}
+
+.tituloIniciarSesion{
+    font-size: 2rem;
+}
+
+.formularioIniciarSesion{
+    @include flexCenter;
+    border-radius: 1.5625rem;
+    background-color: rgb(203, 196, 196);
+    width: 31.25rem;
+    height: 18.75rem;
+    text-align: center;
+    div{
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            input{
+                @include flexCenter;
+                border-radius: 1.5625rem;
+                background-color:map-get($color, secundario) ;
+                border: none;
+                padding: .625rem;
+                &:hover{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+

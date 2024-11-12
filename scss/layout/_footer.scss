@@ -1,5 +1,5 @@
 footer {
-    background-color:rgb(185,181,181);
+    background-color:map-get($color ,primario );
     font-family: "Julius Sans One", system-ui;
     @include flexCenter;
     padding: 20px;

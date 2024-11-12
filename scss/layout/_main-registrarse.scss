@@ -1,0 +1,68 @@
+.fondoFormularios {
+    background-image: url(../assets/img/fondo\ formularios.jpg);
+    font-family: "Kaisei HarunoUmi", serif;
+    height:  56.25rem;
+    @include flexColum;
+}
+
+.tituloRegistrarse{
+    font-size: 2rem;
+}
+
+.formularioRegistrarse{
+    border-radius: 1.5625rem;
+    background-color:rgb(203, 196, 196);
+    width: 37.5rem;
+    height: 22.4375rem;
+    padding: 40px;
+}
+
+.gridsForm{
+    @include grid(1fr 2fr, extend(5, auto), "usuario perfil""mail ingresePerfil""contraseña fotoPerfil""repiteContraseña none""registrarse none");
+    row-gap: .9375rem;
+    column-gap: 2.5rem;
+    input{
+        border-radius: 1.5625rem;
+        background-color: map-get($color, secundario);
+        border: none;
+        padding: .625rem;
+        &:hover{
+            font-weight: bold;
+        }
+    }
+}
+
+.usuario{
+    grid-area: usuario;
+}
+
+.mail{
+    grid-area: mail;
+}
+
+.contraseña{
+    grid-area: contraseña;
+}
+
+.repiteContraseña{
+    grid-area: repiteContraseña;
+}
+
+.perfil{
+    grid-area: perfil;
+    text-align: center;
+}
+
+.ingresePerfil{
+    grid-area: ingresePerfil;
+    text-align: center;
+}
+
+.fotoPerfil{
+    grid-area: fotoPerfil;
+}
+
+.registrarse{
+    grid-area: registrarse;
+}
+

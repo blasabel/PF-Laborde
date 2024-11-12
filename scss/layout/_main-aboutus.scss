@@ -65,7 +65,7 @@
     height: 37.5rem;
     h2{
         @include flexCenter;
-        background-color: rgb(185,181,181);
+        background-color: map-get($color, primario );
         height: 5.625rem;
     }
 }
@@ -95,12 +95,12 @@
     img{
         width: 2.375rem;
         border-radius: 100%;
-        background-color: rgb(185,181,181);
+        background-color: map-get($color, primario);
         padding: .625rem;
     }
     p{
         border-radius: 1.875rem;
-        background-color: rgb(204, 211, 238);
+        background-color: map-get($color, cuarto);
         padding: .9375rem;
         font-size: 1rem;
         width: 31.25rem;
@@ -137,7 +137,7 @@
     width: 62.5rem;
     text-align: center;
     border-radius: 1.875rem;
-    background-color: rgb(204, 211, 238);
+    background-color: map-get($color, cuarto);
     font-size: 1rem;
     padding: .9375rem;
 }

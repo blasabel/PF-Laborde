@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 
 Import de Utilities
@@ -82,14 +83,14 @@ Import de Layout
 .navBarra li ul li {
   padding: 5px 10px;
 }
-.navBarra li :hover ul {
+.navBarra li:hover ul {
   display: flex;
   flex-direction: column;
   justify-content: right;
   padding: 10px 0;
   height: auto;
 }
-.navBarra li :hover ul li {
+.navBarra li:hover ul li {
   padding: 5px 10px;
 }
 
@@ -106,8 +107,13 @@ Import de Layout
   background-color: rgb(217, 217, 217);
   border: none;
 }
-.formBuscar input :hover {
+.formBuscar input:hover {
   border: none rgb(217, 217, 217) solid;
+  font-weight: bold;
+  color: rgba(185, 181, 181, 0.822);
+}
+
+a:hover {
   font-weight: bold;
   color: rgba(185, 181, 181, 0.822);
 }
@@ -597,6 +603,181 @@ Import de Layout
 .numeroTelefonoInput {
   grid-area: numeroTelefonoInput;
   width: 15.625rem;
+}
+
+.fondoFormularios {
+  background-image: url(../assets/img/fondo\ formularios.jpg);
+  font-family: "Kaisei HarunoUmi", serif;
+  height: 56.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7.5rem;
+  padding: 9.375rem;
+}
+
+.tituloRegistrarse {
+  font-size: 2rem;
+}
+
+.formularioRegistrarse {
+  border-radius: 1.5625rem;
+  background-color: rgb(203, 196, 196);
+  width: 37.5rem;
+  height: 22.4375rem;
+  padding: 40px;
+}
+
+.gridsForm {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: extend(5, auto);
+  grid-template-areas: "usuario perfil" "mail ingresePerfil" "contraseña fotoPerfil" "repiteContraseña none" "registrarse none";
+  row-gap: 0.9375rem;
+  column-gap: 2.5rem;
+}
+.gridsForm input {
+  border-radius: 1.5625rem;
+  background-color: rgb(217, 217, 217);
+  border: none;
+  padding: 0.625rem;
+}
+.gridsForm input:hover {
+  font-weight: bold;
+}
+
+.usuario {
+  grid-area: usuario;
+}
+
+.mail {
+  grid-area: mail;
+}
+
+.contraseña {
+  grid-area: contraseña;
+}
+
+.repiteContraseña {
+  grid-area: repiteContraseña;
+}
+
+.perfil {
+  grid-area: perfil;
+  text-align: center;
+}
+
+.ingresePerfil {
+  grid-area: ingresePerfil;
+  text-align: center;
+}
+
+.fotoPerfil {
+  grid-area: fotoPerfil;
+}
+
+.registrarse {
+  grid-area: registrarse;
+}
+
+.fondoFormularioIniciar {
+  background-image: url(../assets/img/fondo\ formularios.jpg);
+  font-family: "Kaisei HarunoUmi", serif;
+  height: 56.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7.5rem;
+  padding: 9.375rem;
+}
+
+.tituloIniciarSesion {
+  font-size: 2rem;
+}
+
+.formularioIniciarSesion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5625rem;
+  background-color: rgb(203, 196, 196);
+  width: 31.25rem;
+  height: 18.75rem;
+  text-align: center;
+}
+.formularioIniciarSesion div form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.formularioIniciarSesion div form input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5625rem;
+  background-color: rgb(217, 217, 217);
+  border: none;
+  padding: 0.625rem;
+}
+.formularioIniciarSesion div form input:hover {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .headerInicio div {
+    padding: 0.9375rem;
+  }
+  .headerInicio div img {
+    width: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .headerInicio div {
+    padding: 0.625rem;
+  }
+  .headerInicio div img {
+    width: 1.875rem;
+  }
+  .headerInicio div a {
+    font-size: 0.875rem;
+  }
+}
+.navBarra {
+  padding: 0.625rem;
+  gap: 1rem;
+}
+.navBarra li a {
+  font-size: 0.875rem;
+}
+
+.formBuscar {
+  width: 15rem;
+}
+
+.navFondo img {
+  width: 25px;
+}
+
+.navBarra {
+  padding: 0.3125rem;
+  gap: 0.5rem;
+}
+.navBarra li a {
+  font-size: 0.75rem;
+}
+
+.formBuscar {
+  width: 12rem;
+  padding: 0.5rem;
+}
+.formBuscar input {
+  font-size: 12px;
+}
+
+.navFondo img {
+  width: 1.25rem;
 }
 
 footer {
