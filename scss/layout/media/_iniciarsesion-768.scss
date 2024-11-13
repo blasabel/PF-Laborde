@@ -1,0 +1,27 @@
+@media(max-width:768px){
+    .fondoFormularioIniciar {
+        height: 40rem;
+    }
+
+    .formularioIniciarSesion {
+        width: 18rem; 
+        height: 14rem; 
+        padding: .625rem;
+        div{
+            form{
+                gap: 1.25rem;
+                input{
+                    padding: .5rem; 
+                    font-size: .75rem;
+                }
+            }
+        }
+    }
+
+    .tituloIniciarSesion {
+        font-size: 1.25rem;
+        @include flexCenter
+    }
+
+
+}

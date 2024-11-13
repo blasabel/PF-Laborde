@@ -732,6 +732,9 @@ a:hover {
   .headerInicio div img {
     width: 40px;
   }
+  .headerInicio div a {
+    font-size: 0.875rem;
+  }
 }
 @media (max-width: 480px) {
   .headerInicio div {
@@ -741,45 +744,399 @@ a:hover {
     width: 1.875rem;
   }
   .headerInicio div a {
-    font-size: 0.875rem;
+    font-size: 0.625rem;
   }
 }
-.navBarra {
-  padding: 0.625rem;
-  gap: 1rem;
+@media (max-width: 768px) {
+  .navBarra {
+    padding: 0.625rem;
+    gap: 1rem;
+  }
+  .navBarra li a {
+    font-size: 0.875rem;
+  }
+  .formBuscar {
+    width: 15rem;
+  }
+  .navFondo img {
+    width: 25px;
+  }
 }
-.navBarra li a {
-  font-size: 0.875rem;
+@media (max-width: 670px) {
+  .navBarra {
+    padding: 0.5rem;
+    gap: 0.75rem;
+  }
+  .navBarra li a {
+    font-size: 0.75rem;
+  }
+  .formBuscar {
+    width: 7.5rem;
+  }
+  .formBuscar input {
+    font-size: 0.75rem;
+    width: 5rem;
+  }
+  .navFondo img {
+    width: 1.375rem;
+  }
 }
-
-.formBuscar {
-  width: 15rem;
+@media (max-width: 480px) {
+  .navBarra {
+    padding: 0.3125rem;
+    gap: 0.5rem;
+  }
+  .navBarra li a {
+    font-size: 0.5rem;
+  }
+  .formBuscar {
+    width: 6rem;
+    padding: 0.3125rem;
+  }
+  .formBuscar input {
+    font-size: 8px;
+    width: 3rem;
+  }
+  .navFondo img {
+    width: 1rem;
+  }
 }
-
-.navFondo img {
-  width: 25px;
+@media (max-width: 768px) {
+  footer {
+    font-size: 0.75rem;
+    padding: 0.75rem;
+  }
+  footer img {
+    width: 3.125rem;
+  }
 }
-
-.navBarra {
-  padding: 0.3125rem;
-  gap: 0.5rem;
+@media (max-width: 420px) {
+  footer {
+    font-size: 0.625rem;
+    padding: 0.625rem;
+  }
+  footer img {
+    width: 2.5rem;
+  }
 }
-.navBarra li a {
-  font-size: 0.75rem;
+@media (max-width: 1024px) {
+  .fondoFormularios {
+    height: 50rem;
+  }
+  .formularioRegistrarse {
+    width: 32rem;
+    padding: 1.875rem;
+  }
+  .tituloRegistrarse {
+    font-size: 1.5rem;
+  }
+  .gridsForm {
+    column-gap: 2rem;
+  }
+  .gridsForm p {
+    font-size: 1rem;
+  }
+  .gridsForm p input {
+    width: 12.5rem;
+    padding: 0.5rem;
+  }
+  .gridsForm .fotoPerfil {
+    width: 12.5rem;
+  }
 }
-
-.formBuscar {
-  width: 12rem;
-  padding: 0.5rem;
+@media (max-width: 768px) {
+  .fondoFormularios {
+    height: 40rem;
+  }
+  .formularioRegistrarse {
+    width: 25rem;
+    padding: 20px;
+  }
+  .tituloRegistrarse {
+    font-size: 1.25rem;
+  }
+  .gridsForm {
+    column-gap: 1.5rem;
+  }
+  .gridsForm p input {
+    width: 8.75rem;
+    padding: 0.5rem;
+  }
+  .gridsForm .fotoPerfil {
+    width: 11.5rem;
+  }
 }
-.formBuscar input {
-  font-size: 12px;
+@media (max-width: 484px) {
+  .fondoFormularios {
+    height: 30rem;
+  }
+  .formularioRegistrarse {
+    width: 20rem;
+    padding: 0.9375rem;
+  }
+  .tituloRegistrarse {
+    font-size: 1.4rem;
+  }
+  .gridsForm {
+    column-gap: 1rem;
+  }
+  .gridsForm p {
+    font-size: 0.75rem;
+  }
+  .gridsForm p input {
+    width: 6.25rem;
+    padding: 0.4rem;
+    font-size: 0.75rem;
+  }
+  .gridsForm .fotoPerfil {
+    width: 10rem;
+  }
+  .gridsForm .registrarse {
+    font-size: 1rem;
+  }
 }
-
-.navFondo img {
-  width: 1.25rem;
+@media (max-width: 400px) {
+  .fondoFormularios {
+    height: 30rem;
+  }
+  .formularioRegistrarse {
+    width: 16rem;
+    padding: 0.75rem;
+  }
+  .tituloRegistrarse {
+    font-size: 1.125rem;
+  }
+  .gridsForm {
+    column-gap: 1rem;
+  }
+  .gridsForm p {
+    font-size: 0.75rem;
+  }
+  .gridsForm p input {
+    width: 5rem;
+    padding: 0.4rem;
+    font-size: 0.5rem;
+  }
+  .gridsForm .fotoPerfil {
+    width: 6rem;
+    font-size: 0.5rem;
+  }
+  .gridsForm .registrarse {
+    font-size: 0.625rem;
+  }
 }
-
+@media (max-width: 1024px) {
+  .fondoFormularioIniciar {
+    height: 50rem; /* Ajuste de altura */
+  }
+  .formularioIniciarSesion {
+    width: 28rem;
+    height: 18rem;
+  }
+  .tituloIniciarSesion {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .fondoFormularioIniciar {
+    height: 40rem;
+  }
+  .formularioIniciarSesion {
+    width: 18rem;
+    height: 14rem;
+    padding: 0.625rem;
+  }
+  .formularioIniciarSesion div form {
+    gap: 1.25rem;
+  }
+  .formularioIniciarSesion div form input {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+  .tituloIniciarSesion {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 420px) {
+  .fondoFormularioIniciar {
+    height: 25rem;
+    gap: 3.75rem;
+  }
+  .formularioIniciarSesion {
+    width: 14rem;
+    height: 12rem;
+  }
+  .formularioIniciarSesion div form {
+    gap: 1rem;
+    font-size: 0.75rem;
+  }
+  .formularioIniciarSesion div form input {
+    padding: 0.4rem;
+    font-size: 0.625rem;
+    width: 6.25rem;
+  }
+  .tituloIniciarSesion {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1024px) {
+  .fondoReservas {
+    height: 50rem;
+    padding: 6rem;
+    gap: 6rem;
+  }
+  .tituloReservas {
+    font-size: 1.75rem;
+  }
+  .reservasForm {
+    column-gap: 1.5rem;
+    font-size: 0.875rem;
+    width: 37.5rem;
+  }
+  .gridReservas-1, .gridReservas-2, .gridReservas-3 {
+    padding: 0.5rem;
+  }
+  .gridReservas-1 input, .gridReservas-2 input, .gridReservas-3 input {
+    width: 12.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .fondoReservas {
+    height: 50rem;
+    padding: 4rem;
+    gap: 6rem;
+  }
+  .tituloReservas {
+    font-size: 1.5rem;
+  }
+  .reservasForm {
+    column-gap: 0.875rem;
+    font-size: 0.75rem;
+    width: 31.25rem;
+  }
+  .gridReservas-1, .gridReservas-2, .gridReservas-3 {
+    padding: 0.375rem;
+  }
+  .gridReservas-1 input, .gridReservas-2 input, .gridReservas-3 input {
+    width: 9.375rem;
+    padding: 0.5rem;
+  }
+  .gridReservas-2 {
+    width: 6.25rem;
+  }
+}
+@media (max-width: 628px) {
+  .tituloReservas {
+    font-size: 1.25rem;
+  }
+  .reservasForm {
+    column-gap: 0.875rem;
+    font-size: 0.75rem;
+    width: 26.5625rem;
+  }
+  .reservasFormEstilos {
+    padding: 1.375rem;
+  }
+  .gridReservas-1, .gridReservas-2, .gridReservas-3 {
+    padding: 0.375rem;
+  }
+  .gridReservas-1 input, .gridReservas-2 input, .gridReservas-3 input {
+    width: 6.25rem;
+    padding: 0.5rem;
+    font-size: 0.5rem;
+  }
+  .gridReservas-1 {
+    gap: 2px;
+    width: 25rem;
+  }
+  .gridReservas-2 {
+    width: 6.25rem;
+  }
+}
+@media (max-width: 520px) {
+  .fondoReservas {
+    height: 50rem;
+    gap: 2.5rem;
+  }
+  .tituloReservas {
+    font-size: 1rem;
+  }
+  .reservasForm {
+    column-gap: 0.75rem;
+    font-size: 0.625rem;
+    width: 18.75rem;
+    display: grid;
+    grid-template-areas: "gridReservas-1" "gridReservas-2" "gridReservas-3";
+    column-gap: 1rem;
+    row-gap: 16px;
+  }
+  .reservasFormEstilos {
+    padding: 1.375rem;
+  }
+  .gridReservas-1, .gridReservas-2, .gridReservas-3 {
+    padding: 0.5rem;
+    grid-template-columns: 1fr;
+  }
+  .gridReservas-1 input, .gridReservas-2 input, .gridReservas-3 input {
+    width: 5rem;
+    padding: 0.375rem;
+    font-size: 0.5rem;
+  }
+  .gridReservas-1 {
+    gap: none;
+    width: 18.75rem;
+    font-size: 0.5rem;
+    column-gap: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+  .gridReservas-2 {
+    width: 5rem;
+  }
+  .gridReservas-3 {
+    border: none;
+  }
+}
+@media (max-width: 420px) {
+  .fondoReservas {
+    height: 50rem;
+    gap: 1.25rem;
+  }
+  .tituloReservas {
+    font-size: 0.875rem;
+  }
+  .reservasForm {
+    width: 12.5rem;
+    gap: 0.25rem;
+  }
+  .gridReservas-1, .gridReservas-2, .gridReservas-3 {
+    padding: 0.125rem;
+    grid-template-columns: 1fr;
+  }
+  .gridReservas-1 input, .gridReservas-2 input, .gridReservas-3 input {
+    width: 5rem;
+    padding: 0.375rem;
+    font-size: 0.5rem;
+  }
+  .gridReservas-1 {
+    gap: none;
+    width: 18.75rem;
+    font-size: 0.5rem;
+    grid-template-areas: "cantPersonas selector" "fechaInicio fechaInicioInput" "fechaRegreso fechaRegresoInput";
+    row-gap: 0.25rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .dni {
+    grid-area: dni;
+    width: 5rem;
+  }
+}
 footer {
   background-color: rgb(185, 181, 181);
   font-family: "Julius Sans One", system-ui;

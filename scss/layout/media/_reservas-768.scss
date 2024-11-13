@@ -1,0 +1,29 @@
+@media(max-width:768px){
+    .fondoReservas {
+        height: 50rem;
+        padding: 4rem;
+        gap: 6rem;
+    }
+
+    .tituloReservas {
+        font-size: 1.5rem;
+    }
+
+    .reservasForm {
+        column-gap: .875rem;
+        font-size: .75rem;
+        width: 31.25rem;
+    }
+
+    .gridReservas-1, .gridReservas-2, .gridReservas-3 {
+        padding: .375rem;
+        input{
+            width: 9.375rem;
+            padding: .5rem;
+        }
+    }
+
+    .gridReservas-2{
+        width: 6.25rem;
+    }
+}

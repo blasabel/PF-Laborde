@@ -1,19 +1,21 @@
-.navBarra {
-    padding: .625rem;
-    gap: 1rem;
-    li{
-        a{
-            font-size: .875rem;
+@media(max-width:768px){
+    .navBarra {
+        padding: .625rem;
+        gap: 1rem;
+        li{
+            a{
+                font-size: .875rem;
+            }
         }
     }
-}
-
-.formBuscar {
-    width: 15rem;
-}
-
-.navFondo{
-    img {
-        width: 25px;
+    
+    .formBuscar {
+        width: 15rem;
+    }
+    
+    .navFondo{
+        img {
+            width: 25px;
+        }
     }
 }

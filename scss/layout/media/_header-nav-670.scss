@@ -1,0 +1,25 @@
+@media(max-width:670px){
+    .navBarra {
+        padding: .5rem;
+        gap: .75rem;
+        li{
+            a{
+                font-size: .75rem;
+            }
+        }
+    }
+    
+    .formBuscar {
+        width: 7.5rem;
+        input{
+            font-size: .75rem;
+            width: 5rem;
+        }
+    }
+    
+    .navFondo{
+        img {
+            width: 1.375rem;
+        }
+    }
+}

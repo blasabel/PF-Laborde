@@ -1,0 +1,28 @@
+@media(max-width:768px){
+    .fondoFormularios {
+        height: 40rem; 
+    }
+
+    .formularioRegistrarse {
+        width: 25rem;
+        padding: 20px;
+    }
+
+    .tituloRegistrarse {
+        font-size: 1.25rem;
+    }
+
+    .gridsForm {
+        column-gap: 1.5rem;
+        p{
+            input{
+                width: 8.75rem ;
+                padding: .5rem;
+            }
+        }
+        .fotoPerfil{
+            width: 11.5rem ;
+        }
+    }
+}
+

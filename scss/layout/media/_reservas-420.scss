@@ -1,0 +1,43 @@
+@media(max-width:420px){
+    .fondoReservas{
+        height: 50rem;
+        gap: 1.25rem;
+    }
+
+    .tituloReservas {
+        font-size: .875rem;
+    }
+
+    .reservasForm {
+        width: 12.5rem;
+        gap: .25rem;
+    }
+
+    .gridReservas-1, .gridReservas-2, .gridReservas-3 {
+        padding: .125rem;
+        grid-template-columns: 1fr;
+        input{
+            width: 5rem;
+            padding: .375rem;
+            font-size: .5rem;
+        }
+    }
+
+    .gridReservas-1{
+        gap: none;
+        width: 18.75rem;
+        font-size: .5rem;
+        grid-template-areas:
+        "cantPersonas selector"
+        "fechaInicio fechaInicioInput"
+        "fechaRegreso fechaRegresoInput";
+        row-gap: .25rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+
+    .dni{
+        grid-area: dni;
+        width: 5rem;
+    }
+}

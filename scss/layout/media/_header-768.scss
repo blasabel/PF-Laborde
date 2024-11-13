@@ -1,11 +1,14 @@
 @media (max-width: 768px) {
     
     .headerInicio{
-        div {
+        div{
             padding: .9375rem;
             img {
                 width: 40px;
             } 
+            a{
+                font-size: .875rem;
+            }
         } 
     } 
 }
