@@ -123,11 +123,12 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   height: 50.75rem;
-  width: 118.95rem;
+  width: 100%;
   font-family: "Kaisei HarunoUmi", serif;
   display: flex;
   align-items: center;
   justify-content: left;
+  overflow: hidden;
 }
 .logoPrincipio div h2 {
   border: solid 2px black;
