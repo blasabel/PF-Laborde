@@ -1127,15 +1127,63 @@ a:hover {
   }
   .gridReservas-1 {
     gap: none;
-    width: 18.75rem;
+    width: 15.625rem;
     font-size: 0.5rem;
     grid-template-areas: "cantPersonas selector" "fechaInicio fechaInicioInput" "fechaRegreso fechaRegresoInput";
     row-gap: 0.25rem;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .datos {
+    grid-area: datos;
+    width: 9.375rem;
+  }
+  .nombreIntegrante {
+    grid-area: nombreIntegrante;
+    width: 9.375rem;
+  }
+  .apellidoIntegrante {
+    grid-area: apellidoIntegrante;
+    width: 9.375rem;
+  }
+  .edadIntegrante {
+    grid-area: edadIntegrante;
+    width: 9.375rem;
+  }
   .dni {
     grid-area: dni;
     width: 5rem;
+  }
+  .numeroTelefono {
+    grid-area: numeroTelefono;
+    width: 9.375rem;
+  }
+}
+@media (max-width: 1024px) {
+  .logoPrincipio {
+    background-size: contain;
+    height: 32.9rem;
+  }
+  .logoPrincipio div h2 {
+    width: 31.25rem;
+    font-size: 5.125rem;
+  }
+  .logoPrincipio div h3 {
+    width: 26.25rem;
+    font-size: 1.125rem;
+  }
+  .fondoFrase img {
+    width: 21.875rem;
+    height: 17.5rem;
+  }
+  .fondoFrase article {
+    width: 28rem;
+    height: 12.5rem;
+  }
+  .fondoFrase article p {
+    font-size: 1.25rem;
+  }
+  .fondoPilares h3 {
+    padding-top: 3.75rem;
   }
 }
 footer {
@@ -1219,6 +1267,30 @@ Import de Components
   padding-top: 3.125rem;
   padding-left: 3.125rem;
   padding-right: 3.125rem;
+}
+
+@media (max-width: 1440px) {
+  .tarjetasPilares {
+    width: auto;
+  }
+  .tarjetasPilares article {
+    width: 18.75rem;
+    font-size: 1rem;
+  }
+  .tarjetasPilares article p {
+    width: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .tarjetasPilares article {
+    width: 18.75rem;
+    font-size: 1rem;
+    gap: 0.9375rem;
+    padding: 1.875rem;
+  }
+  .tarjetasPilares article p {
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

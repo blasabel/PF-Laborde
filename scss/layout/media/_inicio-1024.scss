@@ -1,0 +1,36 @@
+@media(max-width:1024px){
+    .logoPrincipio{
+        background-size: contain;
+        height: 32.9rem;
+        div{
+            h2{
+                width: 31.25rem;
+                font-size: 5.125rem;
+            }
+            h3{
+                width: 26.25rem;
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    .fondoFrase{
+        img{
+            width: 21.875rem;
+            height: 17.5rem;
+        }
+        article{
+            width: 28rem;
+            height: 12.5rem;
+            p{
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    .fondoPilares{
+        h3{
+            padding-top: 3.75rem;
+        }
+    }
+}

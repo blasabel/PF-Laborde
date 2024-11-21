@@ -25,7 +25,7 @@
 
     .gridReservas-1{
         gap: none;
-        width: 18.75rem;
+        width: 15.625rem;
         font-size: .5rem;
         grid-template-areas:
         "cantPersonas selector"
@@ -35,9 +35,33 @@
         grid-template-columns: 1fr 1fr 1fr;
         
     }
+    .datos{
+        grid-area: datos;
+        width: 9.375rem;
+    }
+
+    .nombreIntegrante{
+        grid-area: nombreIntegrante;
+        width: 9.375rem;
+    }
+
+    .apellidoIntegrante{
+        grid-area: apellidoIntegrante;
+        width: 9.375rem;
+    }
+    
+    .edadIntegrante{
+        grid-area: edadIntegrante;
+        width: 9.375rem;
+    }
 
     .dni{
         grid-area: dni;
         width: 5rem;
+    }
+
+    .numeroTelefono{
+        grid-area: numeroTelefono;
+        width: 9.375rem;
     }
 }
