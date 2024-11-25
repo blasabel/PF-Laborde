@@ -1,0 +1,50 @@
+@media(max-width:425px){
+    .logoPrincipio{
+        background-size: 100% 100%;
+        height: 13.75rem;
+        div{
+            h2{
+                width: 9.375rem;
+                font-size: 1.5rem;
+                padding-left: .625rem;
+                border: 0.5px black solid;
+            }
+            h3{
+                width: 7.5rem;
+                font-size: .5rem;
+                padding-left: .3125rem;
+                border: 0.5px black solid;
+            }
+            img{
+                width: 1.25rem;
+                height: 1.25rem;
+                margin-top: 0rem;
+            }
+        }
+    }
+
+    .fondoFrase{
+        height: 15rem;
+        img{
+            width: 8.125rem;
+            height: 6.5625rem;
+            border: 0.5px black solid;
+        }
+        article{
+            width: 8.125rem;
+            height: 5.375rem;
+            border: 0.5px black solid;
+            p{
+                font-size: .375rem;
+                margin: .75rem;
+            }
+        }
+    }
+
+    .fondoPilares{
+        height: auto;
+        h3{
+            font-size: .75rem;
+        }
+    }
+}

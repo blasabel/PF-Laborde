@@ -67,31 +67,66 @@ Import de Layout
   text-decoration: none;
   color: black;
 }
-.navBarra li ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  height: 0;
-  overflow: hidden;
-  list-style: none;
-  background-image: url(../assets/img/marbel\ nav.avif);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: max-height 0.3s ease;
-  z-index: 1;
-  gap: 0.625rem;
+
+.menu-hamburguesa .menu-toggle {
+  display: none;
 }
-.navBarra li ul li {
-  padding: 5px 10px;
-}
-.navBarra li:hover ul {
+.menu-hamburguesa .menu-icon {
   display: flex;
   flex-direction: column;
-  justify-content: right;
-  padding: 10px 0;
-  height: auto;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
 }
-.navBarra li:hover ul li {
-  padding: 5px 10px;
+.menu-hamburguesa .menu-icon span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.menu-hamburguesa .menu-toggle:checked + .menu-icon span:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+}
+.menu-hamburguesa .menu-toggle:checked + .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+.menu-hamburguesa .menu-toggle:checked + .menu-icon span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
+}
+.menu-hamburguesa .menu-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  background-image: url(../assets/img/marbel\ nav.avif);
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.menu-hamburguesa .menu-links li {
+  border-bottom: 1px solid black;
+}
+.menu-hamburguesa .menu-links li:last-child {
+  border-bottom: none;
+}
+.menu-hamburguesa .menu-links a {
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  display: block;
+}
+.menu-hamburguesa .menu-links a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.menu-hamburguesa .menu-toggle:checked ~ .menu-links {
+  display: flex;
 }
 
 .formBuscar {
@@ -121,14 +156,14 @@ a:hover {
 .logoPrincipio {
   background-image: url(../assets/img/fondo\ inicio.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 50.75rem;
+  background-size: 100% 100%;
+  height: 100vh;
   width: 100%;
   font-family: "Kaisei HarunoUmi", serif;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: left;
-  overflow: hidden;
 }
 .logoPrincipio div h2 {
   border: solid 2px black;
@@ -1160,8 +1195,10 @@ a:hover {
 }
 @media (max-width: 1024px) {
   .logoPrincipio {
-    background-size: contain;
-    height: 32.9rem;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 32.875rem;
+    width: 100%;
   }
   .logoPrincipio div h2 {
     width: 31.25rem;
@@ -1184,6 +1221,94 @@ a:hover {
   }
   .fondoPilares h3 {
     padding-top: 3.75rem;
+  }
+}
+@media (max-width: 768px) {
+  .logoPrincipio {
+    background-size: 100% 100%;
+    height: 26.25rem;
+  }
+  .logoPrincipio div h2 {
+    width: 22rem;
+    font-size: 3.5rem;
+  }
+  .logoPrincipio div h3 {
+    width: 20rem;
+    font-size: 0.875rem;
+  }
+  .logoPrincipio div img {
+    width: 5.125rem;
+    height: 2.5rem;
+    margin-top: 0.25rem;
+  }
+  .fondoFrase {
+    height: 18rem;
+  }
+  .fondoFrase img {
+    width: 15rem;
+    height: 9.125rem;
+  }
+  .fondoFrase article {
+    width: 17.6875rem;
+    height: 7.6875rem;
+    padding: 0.625rem;
+  }
+  .fondoFrase article p {
+    font-size: 0.75rem;
+    margin: 0.9375rem;
+  }
+  .fondoPilares {
+    height: auto;
+  }
+  .fondoPilares h3 {
+    padding: 1.875rem;
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 425px) {
+  .logoPrincipio {
+    background-size: 100% 100%;
+    height: 13.75rem;
+  }
+  .logoPrincipio div h2 {
+    width: 9.375rem;
+    font-size: 1.5rem;
+    padding-left: 0.625rem;
+    border: 0.5px black solid;
+  }
+  .logoPrincipio div h3 {
+    width: 7.5rem;
+    font-size: 0.5rem;
+    padding-left: 0.3125rem;
+    border: 0.5px black solid;
+  }
+  .logoPrincipio div img {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 0rem;
+  }
+  .fondoFrase {
+    height: 15rem;
+  }
+  .fondoFrase img {
+    width: 8.125rem;
+    height: 6.5625rem;
+    border: 0.5px black solid;
+  }
+  .fondoFrase article {
+    width: 8.125rem;
+    height: 5.375rem;
+    border: 0.5px black solid;
+  }
+  .fondoFrase article p {
+    font-size: 0.375rem;
+    margin: 0.75rem;
+  }
+  .fondoPilares {
+    height: auto;
+  }
+  .fondoPilares h3 {
+    font-size: 0.75rem;
   }
 }
 footer {
@@ -1290,6 +1415,50 @@ Import de Components
   }
   .tarjetasPilares article p {
     width: auto;
+  }
+}
+@media (max-width: 768px) {
+  .tarjetasPilares {
+    padding: 0.625rem;
+  }
+  .tarjetasPilares article {
+    width: 17.1875rem;
+    height: 100%;
+    font-size: 0.875rem;
+    padding: 0.9375rem;
+  }
+  .tarjetasPilares article img {
+    width: 5.125rem;
+    height: 4.75rem;
+  }
+  .tarjetasPilares article p {
+    width: auto;
+    font-size: small;
+  }
+}
+@media (max-width: 425px) {
+  .tarjetasPilares {
+    padding: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tarjetasPilares article {
+    width: 17.1875rem;
+    font-size: 0.625rem;
+    padding: 0.9375rem;
+  }
+  .tarjetasPilares article img {
+    width: 3.375rem;
+    height: 3.625rem;
+    border: 0.5px black solid;
+  }
+  .tarjetasPilares article h4 {
+    font-size: 0.75rem;
+  }
+  .tarjetasPilares article p {
+    width: auto;
+    font-size: 0.625rem;
   }
 }
 

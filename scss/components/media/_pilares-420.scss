@@ -1,0 +1,26 @@
+@media(max-width:425px){
+    .tarjetasPilares{
+        padding: .625rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        article{
+            width: 17.1875rem;
+            font-size: .625rem;
+            padding: .9375rem;
+            img{
+                width: 3.375rem;
+                height: 3.625rem;
+                border: 0.5px black solid;
+            }
+            h4{
+                font-size: .75rem;
+            }
+            p{
+                width: auto;
+                font-size: .625rem;
+            }
+        }
+    }
+}

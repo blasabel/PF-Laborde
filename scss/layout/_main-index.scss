@@ -1,14 +1,14 @@
 .logoPrincipio{
     background-image: url(../assets/img/fondo\ inicio.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 50.75rem;
+    background-size: 100% 100%;
+    height: 100vh;
     width: 100%;
     font-family: "Kaisei HarunoUmi", serif;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: left;
-    overflow: hidden;
     div{
         h2{
             border: solid 2px black;
