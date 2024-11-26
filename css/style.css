@@ -45,6 +45,7 @@ Import de Layout
 
 .navFondo {
   background-image: url(../assets/img/marbel\ nav.avif);
+  background-position: center;
   font-family: "Julius Sans One", system-ui;
   margin: auto;
 }
@@ -57,7 +58,7 @@ Import de Layout
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
-  padding: 20px;
+  padding: 1.25rem;
   position: relative;
 }
 .navBarra li {
@@ -75,26 +76,26 @@ Import de Layout
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 25px;
+  width: 1.875rem;
+  height: 1.5625rem;
   cursor: pointer;
 }
 .menu-hamburguesa .menu-icon span {
   display: block;
-  height: 4px;
+  height: 0.25rem;
   width: 100%;
   background-color: #333;
-  border-radius: 2px;
+  border-radius: 0.125rem;
   transition: all 0.3s ease;
 }
 .menu-hamburguesa .menu-toggle:checked + .menu-icon span:nth-child(1) {
-  transform: rotate(45deg) translateY(10px);
+  transform: rotate(45deg) translateY(14.5px);
 }
 .menu-hamburguesa .menu-toggle:checked + .menu-icon span:nth-child(2) {
   opacity: 0;
 }
 .menu-hamburguesa .menu-toggle:checked + .menu-icon span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-10px);
+  transform: rotate(-45deg) translateY(-14.5px);
 }
 .menu-hamburguesa .menu-links {
   list-style: none;
@@ -104,9 +105,9 @@ Import de Layout
   flex-direction: column;
   background-image: url(../assets/img/marbel\ nav.avif);
   position: absolute;
-  top: 40px;
+  top: 2.5rem;
   right: 0;
-  width: 200px;
+  width: 12.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
@@ -119,7 +120,7 @@ Import de Layout
 .menu-hamburguesa .menu-links a {
   text-decoration: none;
   color: black;
-  padding: 15px;
+  padding: 0.9375rem;
   display: block;
 }
 .menu-hamburguesa .menu-links a:hover {
@@ -237,9 +238,11 @@ a:hover {
 
 .fondoAboutUs {
   background-image: url(../assets/img/NYC\ foto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: "Kaisei HarunoUmi", serif;
   width: auto;
-  height: 21.0625rem;
+  height: 20rem;
   background-position: center;
   display: flex;
   justify-content: center;
@@ -256,10 +259,12 @@ a:hover {
 .textoSobreNosotros {
   font-family: "Kaisei HarunoUmi", serif;
   background-image: url(../assets/img/marbel\ inicio\ fondo.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 2.5rem;
 }
 .textoSobreNosotros img {
-  width: 500px;
+  width: auto;
 }
 
 .fundacionEmpresa, .motivacionesPlanes, .recorridosRealizados {
@@ -293,7 +298,7 @@ a:hover {
 .comentarios {
   font-family: "Kaisei HarunoUmi", serif;
   background-image: url(../assets/img/marbel\ inicio\ fondo.avif);
-  height: 37.5rem;
+  height: auto;
 }
 .comentarios h2 {
   display: flex;
@@ -382,17 +387,25 @@ a:hover {
   align-items: center;
   height: 18.75rem;
   padding: 2.5rem;
+  position: relative;
 }
 .destinosInicio h2 {
   color: white;
   font-size: 8rem;
+  position: relative;
+  display: inline-block;
 }
-.destinosInicio img {
-  width: 15rem;
+.destinosInicio .letraO {
+  position: relative;
+}
+.destinosInicio .letraO img {
   position: absolute;
-  top: 23rem;
-  right: 25.9rem;
+  top: 55%;
+  left: 40%;
   transform: translate(-50%, -50%);
+  width: 15.625rem;
+  height: 15rem;
+  pointer-events: none;
 }
 
 .fondoDestinos {
@@ -824,6 +837,10 @@ a:hover {
   }
   .navBarra li a {
     font-size: 0.5rem;
+  }
+  .menu-hamburguesa .menu-icon {
+    width: 0.9375rem;
+    height: 0.9375rem;
   }
   .formBuscar {
     width: 6rem;
@@ -1311,6 +1328,192 @@ a:hover {
     font-size: 0.75rem;
   }
 }
+@media (max-width: 1440px) {
+  .gridComentarios {
+    column-gap: 3.125rem;
+    row-gap: 0.9375rem;
+    padding: 2.8125rem;
+  }
+  .comentario1 p, .comentario2 p, .comentario3 p, .comentario4 p, .comentario5 p, .comentario6 p {
+    padding: 0.625rem;
+    width: 25rem;
+  }
+  .comentarioFinal {
+    padding: 0.625rem;
+    width: 50rem;
+  }
+}
+@media (max-width: 1024px) {
+  .fundacionEmpresa, .recorridosRealizados, .motivacionesPlanes {
+    gap: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fundacionEmpresa div h3, .recorridosRealizados div h3, .motivacionesPlanes div h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .fundacionEmpresa img, .recorridosRealizados img, .motivacionesPlanes img {
+    width: 30rem;
+    height: 18.625rem;
+  }
+  .comentarios h2 {
+    font-size: 1.375rem;
+  }
+  .imagenComentarios {
+    width: 12.5rem;
+    height: 20rem;
+  }
+  .gridComentarios {
+    column-gap: 1.5625rem;
+    row-gap: 0.625rem;
+    padding: 1.875rem;
+  }
+  .comentario1 p, .comentario2 p, .comentario3 p, .comentario4 p, .comentario5 p, .comentario6 p {
+    width: 15.625rem;
+    font-size: 0.875rem;
+  }
+  .comentario1 img, .comentario2 img, .comentario3 img, .comentario4 img, .comentario5 img, .comentario6 img {
+    width: 1.875rem;
+  }
+  .comentarioFinal {
+    padding: 0.625rem;
+    width: 37.5rem;
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 768px) {
+  .fondoAboutUs div h2 {
+    font-size: 1.25rem;
+    width: 18.75rem;
+  }
+  .fundacionEmpresa, .recorridosRealizados, .motivacionesPlanes {
+    gap: 5rem;
+  }
+  .fundacionEmpresa div, .recorridosRealizados div, .motivacionesPlanes div {
+    gap: 0.9375rem;
+  }
+  .fundacionEmpresa div h3, .recorridosRealizados div h3, .motivacionesPlanes div h3 {
+    font-size: 1.125rem;
+    text-align: center;
+  }
+  .fundacionEmpresa div p, .recorridosRealizados div p, .motivacionesPlanes div p {
+    font-size: 0.875rem;
+    width: 15.625rem;
+  }
+  .fundacionEmpresa img, .recorridosRealizados img, .motivacionesPlanes img {
+    width: 18.75rem;
+    height: 13.75rem;
+  }
+  .comentarios h2 {
+    font-size: 1.125rem;
+  }
+  .imagenComentarios {
+    width: 9.375rem;
+    height: 15.625rem;
+    align-self: center;
+  }
+  .gridComentarios {
+    column-gap: 0.9375rem;
+    row-gap: 0.625rem;
+    padding: 0.9375rem;
+  }
+  .comentario1 p, .comentario2 p, .comentario3 p, .comentario4 p, .comentario5 p, .comentario6 p {
+    width: 12.5rem;
+    font-size: 0.75rem;
+  }
+  .comentario1 img, .comentario2 img, .comentario3 img, .comentario4 img, .comentario5 img, .comentario6 img {
+    width: 1.5625rem;
+  }
+  .comentarioFinal {
+    padding: 0.625rem;
+    width: 28.125rem;
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 425px) {
+  .fondoAboutUs {
+    height: 240px;
+  }
+  .fondoAboutUs div h2 {
+    font-size: 0.875rem;
+    width: 12.5rem;
+  }
+  .fundacionEmpresa, .recorridosRealizados, .motivacionesPlanes {
+    gap: 3.125rem;
+    padding: 0.9375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fundacionEmpresa div, .recorridosRealizados div, .motivacionesPlanes div {
+    gap: 0.9375rem;
+  }
+  .fundacionEmpresa div h3, .recorridosRealizados div h3, .motivacionesPlanes div h3 {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  .fundacionEmpresa div p, .recorridosRealizados div p, .motivacionesPlanes div p {
+    font-size: 0.75rem;
+    width: 15.625rem;
+  }
+  .fundacionEmpresa img, .recorridosRealizados img, .motivacionesPlanes img {
+    width: 12.5rem;
+    height: 10.625rem;
+  }
+  .recorridosRealizados {
+    flex-direction: column-reverse;
+  }
+  .comentarios h2 {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  .imagenComentarios {
+    width: 5rem;
+    height: 9.375rem;
+    align-self: center;
+  }
+  .gridComentarios {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "comentario1 imagenComentarios" "comentario2 imagenComentarios" "comentario3 imagenComentarios" "comentarioFinal imagenComentarios";
+    column-gap: 0.3125rem;
+    row-gap: 0.625rem;
+    padding: 0.9375rem;
+  }
+  .comentario1, .comentario2, .comentario3, .comentario4, .comentario5, .comentario6 {
+    gap: 0.3125rem;
+  }
+  .comentario1 p, .comentario2 p, .comentario3 p, .comentario4 p, .comentario5 p, .comentario6 p {
+    width: 9.375rem;
+    font-size: 0.5rem;
+  }
+  .comentario1 img, .comentario2 img, .comentario3 img, .comentario4 img, .comentario5 img, .comentario6 img {
+    width: 0.9375rem;
+  }
+  .comentario4 {
+    display: none;
+  }
+  .comentario5 {
+    display: none;
+  }
+  .comentario6 {
+    display: none;
+  }
+  .comentarioFinal {
+    padding: 0.625rem;
+    width: 12.5rem;
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 1440px) {
+  .fondoDestinos h3 {
+    font-size: 2rem;
+    width: 18.75rem;
+  }
+}
 footer {
   background-color: rgb(185, 181, 181);
   font-family: "Julius Sans One", system-ui;
@@ -1387,6 +1590,7 @@ Import de Components
 
 .cardNombre {
   text-align: center;
+  width: auto;
   color: black;
   font-family: "Kaisei HarunoUmi", serif;
   padding-top: 3.125rem;
@@ -1459,6 +1663,17 @@ Import de Components
   .tarjetasPilares article p {
     width: auto;
     font-size: 0.625rem;
+  }
+}
+@media (max-width: 1440px) {
+  .cardConteiner {
+    gap: 3.75rem;
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    width: 11.25rem;
+    height: 17.5rem;
   }
 }
 

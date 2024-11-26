@@ -1,0 +1,86 @@
+@media(max-width:425px){
+    .fondoAboutUs{
+        height: 240px;
+        div{
+            h2{
+                font-size: .875rem;
+                width: 12.5rem;
+            }
+        }
+    }
+    .fundacionEmpresa{
+        gap: 3.125rem;
+        padding: .9375rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        div{
+            gap: .9375rem;
+            h3{
+                font-size: .875rem;
+                text-align: center;
+            }
+            p{
+                font-size: .75rem;
+                width: 15.625rem;
+            }
+        }
+        img{
+            width: 12.5rem;
+            height: 10.625rem;
+        }
+    }
+
+    .recorridosRealizados{
+        flex-direction: column-reverse;
+    }
+
+    .comentarios{
+        h2{
+            font-size: .875rem;
+            text-align: center;
+            
+        }
+    }
+    .imagenComentarios{
+        width: 5rem;
+        height: 9.375rem;
+        align-self: center;
+    }
+
+    .gridComentarios{
+        @include grid(repeat(2,2fr), repeat(4,auto), "comentario1 imagenComentarios""comentario2 imagenComentarios""comentario3 imagenComentarios""comentarioFinal imagenComentarios");
+        column-gap: .3125rem;
+        row-gap: .625rem;
+        padding: .9375rem;
+    }
+    
+    .comentario1{
+        gap: .3125rem;
+        p{
+            width: 9.375rem;
+            font-size: .5rem;
+        }
+        img{
+            width: .9375rem;
+        }
+    } 
+
+    .comentario4{
+        display: none;
+    }
+
+    .comentario5{
+        display: none;
+    }
+
+    .comentario6{
+        display: none;
+    }
+
+    .comentarioFinal{
+        padding: .625rem;
+        width: 12.5rem;
+        font-size: .5rem;
+    }
+}

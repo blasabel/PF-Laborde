@@ -5,19 +5,27 @@
     @include flexCenter;
     height: 18.75rem;
     padding: 2.5rem;
+    position: relative;
     h2{
         color: white;
         font-size: 8rem;
+        position: relative; 
+        display: inline-block;
     }
-    img{
-        width: 15rem;
-        position: absolute;
-        top: 23rem;
-        right: 25.900rem;
-        transform: translate(-50%, -50%);
+    .letraO {
+        position: relative; 
+
+        img {
+            position: absolute;
+            top: 55%; 
+            left: 40%; 
+            transform: translate(-50%, -50%); 
+            width: 15.625rem; 
+            height: 15rem;
+            pointer-events: none; 
+        }
     }
 }
-
 .fondoDestinos {
     font-family: "Kaisei HarunoUmi", serif;
     background-image: url(../assets/img/fondo\ destinos\ marbel.jpg);

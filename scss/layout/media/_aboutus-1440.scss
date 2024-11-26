@@ -1,0 +1,19 @@
+@media(max-width:1440px){
+    .gridComentarios{
+        column-gap: 3.125rem;
+        row-gap: .9375rem;
+        padding: 2.8125rem;
+    }
+    
+    .comentario1{
+        p{
+            padding: .625rem;
+            width: 25rem;
+        }
+    }
+
+    .comentarioFinal{
+        padding: .625rem;
+        width: 50rem;
+    }
+}

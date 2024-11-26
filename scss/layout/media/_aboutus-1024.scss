@@ -1,0 +1,48 @@
+@media(max-width:1024px){
+    .fundacionEmpresa{
+        gap: 3.125rem;
+        @include flexCenter;
+        div{
+            h3{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+        img{
+            width: 30rem;
+            height: 18.625rem;
+        }
+    }
+
+    .comentarios{
+        h2{
+            font-size: 1.375rem;
+        }
+    }
+    .imagenComentarios{
+        width: 12.5rem;
+        height: 20rem;
+    }
+
+    .gridComentarios{
+        column-gap: 1.5625rem;
+        row-gap: .625rem;
+        padding: 1.875rem;
+    }
+    
+    .comentario1{
+        p{
+            width: 15.625rem;
+            font-size: .875rem;
+        }
+        img{
+            width: 1.875rem;
+        }
+    }
+
+    .comentarioFinal{
+        padding: .625rem;
+        width: 37.5rem;
+        font-size: .875rem;
+    }
+}

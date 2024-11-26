@@ -1,8 +1,10 @@
 .fondoAboutUs {
     background-image: url(../assets/img/NYC\ foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: "Kaisei HarunoUmi", serif;
     width: auto;
-    height: 21.0625rem;
+    height: 20rem;
     background-position: center;
     @include flexCenter;
     div {
@@ -19,9 +21,11 @@
 .textoSobreNosotros{
     font-family: "Kaisei HarunoUmi", serif;
     background-image: url(../assets/img/marbel\ inicio\ fondo.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 2.5rem;
     img {
-        width: 500px;
+        width: auto;
     }
 }
 
@@ -62,7 +66,7 @@
 .comentarios {
     font-family: "Kaisei HarunoUmi", serif;
     background-image: url(../assets/img/marbel\ inicio\ fondo.avif);
-    height: 37.5rem;
+    height: auto;
     h2{
         @include flexCenter;
         background-color: map-get($color, primario );
@@ -84,6 +88,7 @@
     row-gap: 1.25rem;
     padding: 3.5rem;
     justify-items: center;
+    
 }
 
 .comentario1 {

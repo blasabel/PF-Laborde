@@ -1,0 +1,61 @@
+@media(max-width:768px){
+    .fondoAboutUs{
+        div{
+            h2{
+                font-size: 1.25rem;
+                width: 18.75rem;
+            }
+        }
+    }
+    .fundacionEmpresa{
+        gap: 5rem;
+        div{
+            gap: .9375rem;
+            h3{
+                font-size: 1.125rem;
+                text-align: center;
+            }
+            p{
+                font-size: .875rem;
+                width: 15.625rem;
+            }
+        }
+        img{
+            width: 18.75rem;
+            height: 13.75rem;
+        }
+    }
+
+    .comentarios{
+        h2{
+            font-size: 1.125rem;
+        }
+    }
+    .imagenComentarios{
+        width: 9.375rem;
+        height: 15.625rem;
+        align-self: center;
+    }
+
+    .gridComentarios{
+        column-gap: .9375rem;
+        row-gap: .625rem;
+        padding: .9375rem;
+    }
+    
+    .comentario1{
+        p{
+            width: 12.5rem;
+            font-size: .75rem;
+        }
+        img{
+            width: 1.5625rem;
+        }
+    }
+
+    .comentarioFinal{
+        padding: .625rem;
+        width: 28.125rem;
+        font-size: .75rem;
+    }
+}
