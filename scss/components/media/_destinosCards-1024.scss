@@ -1,0 +1,31 @@
+@media(max-width:1024px){
+    .cardConteiner{
+        gap: 2.5rem;
+    }
+
+    .card{
+        width: 6.25rem;
+        height: 11.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+
+
+    .cardImagen{
+        height: 5.625rem;
+
+    }
+
+    .cardNombre{
+        width: 6.25rem;
+        @include flexCenter;
+        padding: 1.5625rem;
+        p{
+            width: 6.25rem;
+        }
+        
+    }
+
+}

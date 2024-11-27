@@ -1,0 +1,27 @@
+@media(max-width:768px){
+    .cardConteiner{
+        gap: 1.25rem;
+    }
+
+    .card{
+        width: 5rem;
+        height: 9.375rem;
+    }  
+
+
+    .cardImagen{
+        height: 5rem;
+
+    }
+
+    .cardNombre{
+        width: 6.25rem;
+        @include flexCenter;
+        padding: 1.5625rem;
+        p{
+            font-size: .875rem;
+        }
+        
+    }
+
+}
